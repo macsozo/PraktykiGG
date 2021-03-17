@@ -1,6 +1,6 @@
-package Dziedziczenie;
+package klasy_abstrakcyjne;
 
-public class Pies extends Zwierze
+public class Piies extends Zwierze
 {
     private String siersc;
     private int długoscOgonu;
