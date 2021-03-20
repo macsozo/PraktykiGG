@@ -32,7 +32,7 @@ public class Main {
                 System.out.println("błąd, źle napsisales");
                 continue;
             }
-            if(plansza[0][0]=='X' && plansza[0][1]=='X' && plansza[0][2]=='X' )// zrobic to 9 razy
+            if(plansza[0][0]=='X' && plansza[0][1]=='X' && plansza[0][2]=='X' )
             {
                 wygrana1 = true;//wpisywanie danych
             }
@@ -40,7 +40,64 @@ public class Main {
              {
                  wygrana2 = true;
              }
-//miejsce na dorabianie
+            else if(plansza[0][2]=='O' && plansza[1][2]=='O' && plansza[2][2]=='O' )
+            {
+                wygrana2 = true;
+            }
+            else if(plansza[0][1]=='O' && plansza[1][1]=='O' && plansza[2][1]=='O' )
+            {
+                wygrana2 = true;
+            }
+            else if(plansza[0][0]=='O' && plansza[1][1]=='O' && plansza[2][2]=='O' )
+            {
+                wygrana2 = true;
+            }
+            else if(plansza[0][0]=='O' && plansza[1][0]=='O' && plansza[2][0]=='O' )
+            {
+                wygrana2 = true;
+            }
+            else if(plansza[2][0]=='O' && plansza[1][1]=='O' && plansza[0][2]=='O' )
+            {
+                wygrana2 = true;
+            }
+            else if(plansza[2][0]=='O' && plansza[2][1]=='O' && plansza[2][2]=='O' )
+            {
+                wygrana2 = true;
+            }
+            else if(plansza[1][0]=='X' && plansza[1][1]=='X' && plansza[1][2]=='X' )
+            {
+                wygrana1 = true;
+            }
+
+            else if(plansza[0][2]=='X' && plansza[1][2]=='X' && plansza[2][2]=='X' )
+            {
+                wygrana1 = true;
+            }
+            else if(plansza[0][1]=='X' && plansza[1][1]=='X' && plansza[2][1]=='X' )
+            {
+                wygrana1 = true;
+            }
+            else if(plansza[0][0]=='X' && plansza[1][1]=='X' && plansza[2][2]=='X' )
+            {
+                wygrana1 = true;
+            }
+            else if(plansza[0][0]=='X' && plansza[1][0]=='X' && plansza[2][0]=='X' )
+            {
+                wygrana1 = true;
+            }
+            else if(plansza[2][0]=='X' && plansza[1][1]=='X' && plansza[0][2]=='X' )
+            {
+                wygrana1 = true;
+            }
+            else if(plansza[2][0]=='X' && plansza[2][1]=='X' && plansza[2][2]=='X' )
+            {
+                wygrana1 = true;
+            }
+            else if(plansza[1][0]=='X' && plansza[1][1]=='X' && plansza[1][2]=='X' )
+            {
+                wygrana1 = true;
+            }
+
             if(wygrana1==true){// porownywanie danych
                 System.out.println(wygranaGracza1);
                 System.out.println("Gratulacje Gracz1");
